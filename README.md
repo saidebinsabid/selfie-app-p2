@@ -19,10 +19,20 @@ This project is built using basic web technologies, making it extremely beginner
 - **JavaScript (ES6):** For the logic, speech recognition, and webcam integration.
 
 ### 🔗 CDNs Used
-The project relies on a few external libraries and assets included via CDN:
-1. **[Webcam.js](https://cdnjs.com/libraries/webcamjs):** A lightweight library for accessing the computer's webcam.
-2. **[Google Fonts (Poppins)](https://fonts.google.com/):** For modern, readable typography.
-3. **[Font Awesome](https://fontawesome.com/):** For beautiful, scalable vector icons (Camera, Microphone, Video, Image).
+The project relies on external libraries included directly via CDN links in the HTML:
+
+1. **Webcam.js:**
+   ```html
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   ```
+2. **Google Fonts (Poppins):**
+   ```html
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+   ```
+3. **Font Awesome Icons:**
+   ```html
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   ```
 
 ## ⚙️ How It Works
 
