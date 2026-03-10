@@ -5,6 +5,8 @@ A modern, simple, and professional web application that allows users to take a s
 ## 🚀 Short Description
 This application uses the browser's built-in **Speech Recognition AI** to listen to user commands. When the user says specific phrases like *"My selfie please"* or *"Take a snapshot"*, the app automatically opens the webcam, gives an audio countdown using **Speech Synthesis**, takes a picture, and instantly downloads the selfie to the user's computer.
 
+**🔴 Live Demo:** [View Live Website Here](https://saidebinsabid.github.io/selfie-app-p2/)
+
 ## ✨ Features
 - **🎙️ Voice Recognition:** Listens and converts speech to text automatically.
 - **🔊 Voice Feedback:** Talks back to you to let you know the picture is being taken.
