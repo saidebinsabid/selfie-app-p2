@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Link to Google Fonts for professional typography -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<!-- Link to Font Awesome for professional icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<!-- Link to our new custom CSS file -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Webcam.js library for camera features -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"
+		integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title>Voice controlled Selfie app</title>
+</head>
+
+<body>
+	<div class="main-container">
+		<!-- Hidden link used for downloading the image automatically -->
+		<a href="" id="link" download="My Selfie.png"></a>
+
+		<header class="app-header">
+			<h1><i class="fas fa-camera-retro"></i> Voice controlled Selfie app</h1>
+			<p>Say <b>"My selfie please"</b> or <b>"Take a snapshot"</b></p>
+		</header>
+
+		<section class="controls-section">
+			<textarea cols="50" readonly id="textbox" placeholder="What you say will appear here..."></textarea>
+			<button class="start-btn" onclick="start()">
+				<i class="fas fa-microphone"></i> Start Listening
+			</button>
+		</section>
+
+		<section class="camera-section">
+			<h3><i class="fas fa-video"></i> Webcam view</h3>
+			<div class="camera-wrapper">
+				<div id="camera"></div>
+			</div>
+		</section>
+
+		<section class="result-section">
+			<h3><i class="fas fa-image"></i> Your Selfie</h3>
+			<div class="result-wrapper">
+				<div id="result"></div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Link to our updated JavaScript file -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

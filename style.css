@@ -1,0 +1,176 @@
+/* 
+  Custom styles for the Selfie App 
+  Written in a beginner-friendly and professional way using basic CSS.
+*/
+
+/* Reset basic margins and padding for all elements on the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Base background and text colors */
+body {
+    /* Dark moody gradient background */
+    background: linear-gradient(135deg, #161625 0%, #2a1f3d 100%);
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    /* Center the main container horizontally */
+    min-height: 100vh;
+}
+
+/* The main box holding all our content */
+.main-container {
+    /* Dark Glassmorphism (Transparent gradient) effect */
+    background: linear-gradient(135deg, rgba(20, 20, 25, 0.6) 0%, rgba(30, 25, 45, 0.4) 100%);
+    backdrop-filter: blur(15px);
+    /* This adds the beautiful frosted glass blur */
+    -webkit-backdrop-filter: blur(15px);
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    margin: 40px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Soft, glowing white border */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Header text styling */
+.app-header h1 {
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+/* Icons inside the header and titles */
+.app-header h1 i,
+.camera-section h3 i,
+.result-section h3 i {
+    color: #a78bfa;
+    /* Moody purple matching the theme */
+    margin-right: 8px;
+    /* Space between icon and text */
+}
+
+.app-header p {
+    color: #b0b0b0;
+    /* Lighter gray color */
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* Controls section: The text box and the start button */
+.controls-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Text area styling */
+.controls-section textarea {
+    width: 80%;
+    max-width: 400px;
+    height: 60px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    resize: none;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Slightly transparent dark */
+    text-align: center;
+    color: #f0f0f0;
+    font-weight: 500;
+}
+
+/* Text box outline when clicked */
+.controls-section textarea:focus {
+    outline: none;
+    border-color: #a78bfa;
+}
+
+/* Button styling using gradient */
+.start-btn {
+    /* Moody gradient for the button */
+    background: linear-gradient(135deg, #6b21a8 0%, #4c1d95 100%);
+    color: #ffffff;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 14px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Button hover animation */
+.start-btn:hover {
+    transform: translateY(-2px);
+    /* Move slightly up */
+    box-shadow: 0 8px 20px rgba(107, 33, 168, 0.6);
+    /* Bigger dark shadow */
+}
+
+/* Icon inside button */
+.start-btn i {
+    margin-right: 6px;
+}
+
+/* Camera and Result sections space out */
+.camera-section,
+.result-section {
+    margin-bottom: 35px;
+}
+
+/* Title for the picture areas */
+.camera-section h3,
+.result-section h3 {
+    color: #f0f0f0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Wrapper for our view boxes to keep them centered */
+.camera-wrapper,
+.result-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* Making the styling for the camera and picture highly professional */
+#camera,
+#result {
+    width: 450px;
+    height: 350px;
+    background-color: #1a1a2e;
+    /* Dark premium background before camera loads */
+    border-radius: 16px;
+    /* Smooth corners */
+
+    /* Professional sleek frame */
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Hide anything that spills out */
+}
+
+/* Ensure the snapped picture inside #result fits perfectly */
+#result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
